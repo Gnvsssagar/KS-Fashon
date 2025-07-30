@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - KS Fashion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- Navbar (You can copy the navbar from index.html here for consistency) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="../index.html">🛒 KS Fashion</a>
+    <div class="nav-icons ms-auto">
+        <a href="cart.html" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
+        <a href="login.html" class="text-dark ms-3"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </div>
+</nav>
+<!-- Inside pages/product-details.html -->
+<div class="d-grid gap-2">
+    <!-- CHANGE THIS BUTTON -->
+    <button class="btn btn-primary btn-lg add-to-cart-btn" data-product-id="${productId}">
+        <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+    </button>
+    <a href="categories.html?cat=${product.category}" class="btn btn-outline-secondary">Back to ...</a>
+</div>
+
+
+<main class="container py-5">
+  <div id="product-detail-content" class="row">
+    <!-- Product details will be dynamically injected here by JavaScript -->
+    <div class="col-12 text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer (Copy the footer from index.html here) -->
+<footer class="footer bg-dark text-white pt-5 pb-3">
+  <div class="container text-center">
+    <p>&copy; 2025 KS Fashion. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

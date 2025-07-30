@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - KS Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .favorite-btn .fa-heart.favorited { color: #dc3545; font-weight: 900; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="../index.html">🛒 KS Fashion</a>
+    <div class="ms-auto d-flex align-items-center gap-3">
+        <a href="../index.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search"><i class="fas fa-search"></i></a>
+        <a href="wishlist.html" class="nav-link" title="Wishlist"><i class="far fa-heart"></i></a>
+        <a href="cart.html" class="nav-link" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <header class="mb-5">
+    <!-- The search term will be displayed here -->
+    <h1 id="search-results-header" class="fw-bold display-5">Search Results</h1>
+  </header>
+  
+  <!-- This container will be filled with products by JavaScript -->
+  <div id="search-results-container" class="row g-4">
+    <!-- JS will populate this or show an empty message -->
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container text-center"><p>&copy; 2025 KS Fashion. All rights reserved.</p></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
